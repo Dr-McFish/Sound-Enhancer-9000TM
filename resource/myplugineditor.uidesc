@@ -1,18 +1,602 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<vstgui-ui-description version="1">
-	<fonts>
-	</fonts>
-	<colors>
-	</colors>
-	<template background-color="~ BlackCColor" background-color-draw-style="filled and stroked" class="CViewContainer" mouse-enabled="true" name="view" opacity="1" origin="0, 0" size="300, 300" transparent="false" wants-focus="false"/>
-	<custom>
-		<attributes name="FocusDrawing"/>
-		<attributes Path="C:/Users/woosi/source/libs/VST_SDK/my_plugins/Placebo Plugin/resource/myplugineditor.uidesc" name="VST3Editor"/>
-		<attributes Grids="1x 1,5x 5,10x 10,12x 12,15x 15" name="UIGridController"/>
-		<attributes SelectedTemplate="view" name="UITemplateController"/>
-		<attributes EditViewScale="1" EditorSize="0, 0, 500, 545" SplitViewSize_0_0="0.7495183044315992804129678006574977189302" SplitViewSize_0_1="0.2119460500963391003104163701209472492337" SplitViewSize_1_0="0.4797687861271676124097496085596503689885" SplitViewSize_1_1="0.5105973025048169411377330106915906071663" SplitViewSize_2_0="0.6400000000000000133226762955018784850836" SplitViewSize_2_1="0.3499999999999999777955395074968691915274" TabSwitchValue="0" Version="1" name="UIEditController"/>
-		<attributes name="UIAttributesController"/>
-		<attributes SelectedRow="7" name="UIViewCreatorDataSource"/>
-	</custom>
-	<bitmaps/>
-</vstgui-ui-description>
+{
+	"vstgui-ui-description": {
+		"version": "1",
+		"bitmaps": {
+			"Seal": {
+				"path": "C:\\Users\\woosi\\source\\libs\\VST_SDK\\my_plugins\\Placebo Plugin\\resource\\Seal.png"
+			},
+			"brass_tag_small": {
+				"path": "C:\\Users\\woosi\\source\\libs\\VST_SDK\\my_plugins\\Placebo Plugin\\resource\\brass_tag_small.png"
+			},
+			"wood": {
+				"path": "C:\\Users\\woosi\\source\\libs\\VST_SDK\\my_plugins\\Placebo Plugin\\resource\\Plecebo.png"
+			},
+			"wood_boarder2": {
+				"path": "C:\\Users\\woosi\\source\\libs\\VST_SDK\\my_plugins\\Placebo Plugin\\resource\\wood_boarder2.png"
+			}
+		},
+		"fonts": {
+			"Quote": {
+				"bold": "true",
+				"font-name": "DejaVu Math TeX Gyre",
+				"italic": "true",
+				"size": "13"
+			},
+			"Title": {
+				"bold": "true",
+				"font-name": "DejaVu Serif",
+				"size": "30"
+			},
+			"label 1": {
+				"font-name": "David CLM BoldItalic",
+				"size": "23"
+			},
+			"label 2": {
+				"font-name": "DejaVu Serif",
+				"size": "15"
+			}
+		},
+		"colors": {
+			"Dark Wood": "#661f00f1",
+			"Dark Wood 2": "#621e04d7"
+		},
+		"gradients": {},
+		"custom": {
+			"FocusDrawing": {},
+			"VST3Editor": {
+				"Path": "C:/Users/woosi/source/libs/VST_SDK/my_plugins/Placebo Plugin/resource/myplugineditor.uidesc"
+			},
+			"UIGridController": {
+				"Grids": "1x 1,5x 5,10x 10,12x 12,15x 15",
+				"Size": "10, 10"
+			},
+			"UITemplateController": {
+				"SelectedTemplate": "view"
+			},
+			"UIEditController": {
+				"EditViewScale": "1.5",
+				"EditorSize": "0, 0, 1294, 873",
+				"SplitViewSize_0_0": "0.8465171192443919911951866197341587394476",
+				"SplitViewSize_0_1": "0.1298701298701298578741614164755446836352",
+				"SplitViewSize_1_0": "0.4887839433293978963490644673584029078484",
+				"SplitViewSize_1_1": "0.5076741440377804392980465308937709778547",
+				"SplitViewSize_2_0": "0.8608964451313755317229947650048416107893",
+				"SplitViewSize_2_1": "0.135239567233384844202603858320799190551",
+				"TabSwitchValue": "6",
+				"Version": "1",
+				"WriteRCFile": "true"
+			},
+			"UIAttributesController": {},
+			"UIViewCreatorDataSource": {
+				"SelectedRow": "8"
+			},
+			"UIBitmapsDataSource": {
+				"SelectedRow": "0"
+			},
+			"UIFontsDataSource": {
+				"SelectedRow": "0"
+			},
+			"UIColorsDataSource": {
+				"SelectedRow": "1"
+			},
+			"UIGradientsDataSource": {
+				"SelectedRow": "-1"
+			}
+		},
+		"templates": {
+			"view": {
+				"attributes": {
+					"background-color": "~ BlackCColor",
+					"background-color-draw-style": "filled and stroked",
+					"bitmap": "wood",
+					"class": "CViewContainer",
+					"mouse-enabled": "true",
+					"opacity": "1",
+					"origin": "0, 0",
+					"size": "700, 500",
+					"transparent": "false",
+					"wants-focus": "false"
+				},
+				"children": {
+					"CView": {
+						"attributes": {
+							"bitmap": "wood_boarder2",
+							"class": "CView",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "650, -20",
+							"size": "1024, 1024",
+							"transparent": "false",
+							"wants-focus": "false"
+						}
+					},
+					"CView": {
+						"attributes": {
+							"bitmap": "wood_boarder2",
+							"class": "CView",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "-980, -80",
+							"size": "1024, 1024",
+							"transparent": "false",
+							"wants-focus": "false"
+						}
+					},
+					"CView": {
+						"attributes": {
+							"bitmap": "wood_boarder2",
+							"class": "CView",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "-90, 450",
+							"size": "1024, 1024",
+							"transparent": "false",
+							"wants-focus": "false"
+						}
+					},
+					"CView": {
+						"attributes": {
+							"bitmap": "wood_boarder2",
+							"class": "CView",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "-60, -980",
+							"size": "1024, 1024",
+							"transparent": "false",
+							"wants-focus": "false"
+						}
+					},
+					"CView": {
+						"attributes": {
+							"bitmap": "brass_tag_small",
+							"class": "CView",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "100, 50",
+							"size": "500, 97",
+							"transparent": "false",
+							"wants-focus": "false"
+						}
+					},
+					"CTextLabel": {
+						"attributes": {
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CTextLabel",
+							"default-value": "0.5",
+							"font": "Title",
+							"font-antialias": "true",
+							"font-color": "Dark Wood",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "134, 70",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "420, 50",
+							"style-3D-in": "true",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "true",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "center",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "Sonic Enhancer 9000™",
+							"transparent": "false",
+							"value-precision": "2",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CTextLabel": {
+						"attributes": {
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CTextLabel",
+							"default-value": "0.5",
+							"font": "label 1",
+							"font-antialias": "true",
+							"font-color": "Dark Wood 2",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "114, 130",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "480, 50",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "center",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "The effortless \"make it better\" box!",
+							"transparent": "false",
+							"value-precision": "2",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CView": {
+						"attributes": {
+							"bitmap": "Seal",
+							"class": "CView",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "60, 324",
+							"size": "130, 114",
+							"transparent": "false",
+							"wants-focus": "false"
+						}
+					},
+					"CMultiLineTextLabel": {
+						"attributes": {
+							"auto-height": "true",
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CMultiLineTextLabel",
+							"default-value": "0.5",
+							"font": "label 2",
+							"font-antialias": "true",
+							"font-color": "Dark Wood 2",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"line-layout": "clip",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "80, 190",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "540, 23.9531",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "left",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "The Sonic Enhaser 90000™ sounds warm amd smooth as silk, as flat",
+							"transparent": "false",
+							"value-precision": "2",
+							"vertical-centered": "false",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CMultiLineTextLabel": {
+						"attributes": {
+							"auto-height": "true",
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CMultiLineTextLabel",
+							"default-value": "0.5",
+							"font": "label 2",
+							"font-antialias": "true",
+							"font-color": "Dark Wood 2",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"line-layout": "clip",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "80, 210",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "550, 19.2969",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "left",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "as a pancake yet as crisp and clean as a potato chip. It simply enriches ",
+							"transparent": "false",
+							"value-precision": "2",
+							"vertical-centered": "false",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CMultiLineTextLabel": {
+						"attributes": {
+							"auto-height": "true",
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CMultiLineTextLabel",
+							"default-value": "0.5",
+							"font": "label 2",
+							"font-antialias": "true",
+							"font-color": "Dark Wood 2",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"line-layout": "clip",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "79, 251",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "550, 19.2969",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "left",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "Sound Refinement Technology™ garantees maximum fidelity to your",
+							"transparent": "false",
+							"value-precision": "2",
+							"vertical-centered": "false",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CMultiLineTextLabel": {
+						"attributes": {
+							"auto-height": "true",
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CMultiLineTextLabel",
+							"default-value": "0.5",
+							"font": "label 2",
+							"font-antialias": "true",
+							"font-color": "Dark Wood 2",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"line-layout": "clip",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "80, 230",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "550, 19.2969",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "left",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "your sound without altering or distoring it's character! Our proprietary ",
+							"transparent": "false",
+							"value-precision": "2",
+							"vertical-centered": "false",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CMultiLineTextLabel": {
+						"attributes": {
+							"auto-height": "true",
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CMultiLineTextLabel",
+							"default-value": "0.5",
+							"font": "label 2",
+							"font-antialias": "true",
+							"font-color": "Dark Wood 2",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"line-layout": "clip",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "79, 271",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "540, 19.2969",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "left",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "input! And the best part: YOU don't have to worry about any of it,",
+							"transparent": "false",
+							"value-precision": "2",
+							"vertical-centered": "false",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CMultiLineTextLabel": {
+						"attributes": {
+							"auto-height": "true",
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CMultiLineTextLabel",
+							"default-value": "0.5",
+							"font": "label 2",
+							"font-antialias": "true",
+							"font-color": "Dark Wood 2",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"line-layout": "clip",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "79, 291",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "540, 19.2969",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "left",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "because the Sonic Enhaser 90000™ takes care of all of it for you!",
+							"transparent": "false",
+							"value-precision": "2",
+							"vertical-centered": "false",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CTextLabel": {
+						"attributes": {
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CTextLabel",
+							"default-value": "0.5",
+							"font": "label 2",
+							"font-antialias": "true",
+							"font-color": "Dark Wood 2",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "197, 380",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "480, 30",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "center",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "-David Bhruhe, Inventer of the Sonic Enhaser 90000™ ",
+							"transparent": "false",
+							"value-precision": "2",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CTextLabel": {
+						"attributes": {
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CTextLabel",
+							"default-value": "0.5",
+							"font": "Quote",
+							"font-antialias": "true",
+							"font-color": "Dark Wood 2",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "160, 330",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "470, 20",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "center",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "\"I have invented the Sonic Enhaser 90000™ cause I didn't have",
+							"transparent": "false",
+							"value-precision": "2",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					},
+					"CTextLabel": {
+						"attributes": {
+							"back-color": "~ TransparentCColor",
+							"background-offset": "0, 0",
+							"class": "CTextLabel",
+							"default-value": "0.5",
+							"font": "Quote",
+							"font-antialias": "true",
+							"font-color": "Dark Wood 2",
+							"frame-color": "~ TransparentCColor",
+							"frame-width": "1",
+							"max-value": "1",
+							"min-value": "0",
+							"mouse-enabled": "true",
+							"opacity": "1",
+							"origin": "170, 350",
+							"round-rect-radius": "6",
+							"shadow-color": "~ TransparentCColor",
+							"size": "470, 20",
+							"style-3D-in": "false",
+							"style-3D-out": "false",
+							"style-no-draw": "false",
+							"style-no-frame": "false",
+							"style-no-text": "false",
+							"style-round-rect": "false",
+							"style-shadow-text": "false",
+							"text-alignment": "center",
+							"text-inset": "0, 0",
+							"text-rotation": "0",
+							"text-shadow-offset": "1, 1",
+							"title": "time to worry about making my audio sounding good.\"",
+							"transparent": "false",
+							"value-precision": "2",
+							"wants-focus": "false",
+							"wheel-inc-value": "0.1"
+						}
+					}
+				}
+			}
+		}
+	}
+}
