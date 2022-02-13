@@ -37,3 +37,9 @@ Method I am using. If you want to, you can use other stuff than Visual Studio, r
  4. Open the solution and build the plugin(Ctrl B). You may want to change it from Debug to Relese mode as well.
  
  5. result will be outputed to `build\VST3\Release\Placebo_Plugin.vst3\Contents\x86_64-win`. Done
+
+## Credits
+
+wood textures https://www.sharetextures.com
+Wax Seal image: Henry-Kuhtz-Fotografie https://pixabay.com/illustrations/seal-rubber-stamp-red-imprint-1877460/
+
