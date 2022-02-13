@@ -7,6 +7,7 @@
 
 #include "base/source/fstreamer.h"
 #include "pluginterfaces/vst/ivstparameterchanges.h"
+#include "public.sdk/source/vst/vstaudioprocessoralgo.h"
 
 using namespace Steinberg;
 
@@ -85,8 +86,62 @@ tresult PLUGIN_API PlaceboProcessor::process (Vst::ProcessData& data)
 		}
 	}*/
 	
-	//--- Here you have to implement your processing
 
+	//-- Flush case: no processing possible
+	if (data.numInputs == 0 || data.numSamples == 0)
+		return kResultOk;
+
+	// Here you have to implement your processing
+	
+	int32 numChannels = data.inputs[0].numChannels;
+
+	//get audio buffers using helper-functions
+	uint32 sampleFramesSize = Vst::getSampleFramesSizeInBytes(processSetup, data.numSamples);
+	void** in = getChannelBuffersPointer(processSetup, data.inputs[0]);
+	void** out = getChannelBuffersPointer(processSetup, data.outputs[0]);
+
+	// Here could check the silent flags
+	if (data.inputs[0].silenceFlags != 0) {
+		for (int32 i = 0; i < numChannels; i++) 
+			if (in[i] != out[i])
+				memset(out[i], 0, sampleFramesSize);
+
+		data.outputs[0].silenceFlags = ((uint64)1<< numChannels) -1;
+		return kResultTrue;
+	}
+	
+	/*/if (bBypass)
+	{
+		for (int32 i = 0; i < numChannels; i++)
+		{
+			// do not need to be copied if the buffers are the same
+			if (in[i] != out[i])
+			{
+				memcpy(out[i], in[i], sampleFramesSize);
+			}
+		}
+		// the input silence flags has to be forward to the output here!
+		// very important for the host in order to inform next plug-in in the processing chain
+		data.outputs[0].silenceFlags = data.inputs[0].silenceFlags;
+	}
+	else
+	{//*/
+	const float gain = 1.1;
+	// for each channel (left and right)
+	for (int32 i = 0; i < numChannels; i++)
+	{
+		int32 samples = data.numSamples;
+		Vst::Sample32* ptrIn = (Vst::Sample32*)in[i];
+		Vst::Sample32* ptrOut = (Vst::Sample32*)out[i];
+		Vst::Sample32 tmp;
+		// for each sample in this channel
+		while (--samples >= 0)
+		{
+			// apply gain
+			tmp = (*ptrIn++) * gain;
+			(*ptrOut++) = tmp;
+		}
+	}
 	return kResultOk;
 }
 

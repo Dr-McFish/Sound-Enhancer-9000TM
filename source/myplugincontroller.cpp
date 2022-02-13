@@ -25,7 +25,8 @@ tresult PLUGIN_API PlaceboController::initialize (FUnknown* context)
 	}
 
 	// Here you could register some parameters
-
+	//parameters.addParameter(STR16("Bypass"), STR16("bool"), 1, 0,
+	//	Steinberg::Vst::ParameterInfo::kIsBypass, BypassParams::kIsBypassId, NULL);
 	return result;
 }
 

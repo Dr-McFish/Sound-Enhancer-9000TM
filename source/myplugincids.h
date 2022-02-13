@@ -7,6 +7,10 @@
 #include "pluginterfaces/base/funknown.h"
 #include "pluginterfaces/vst/vsttypes.h"
 
+enum bypassParams : Steinberg::Vst::ParamID
+{
+	kIsBypassID = 102,
+};
 namespace McFish {
 //------------------------------------------------------------------------
 static const Steinberg::FUID kPlaceboProcessorUID (0x70B0E0A5, 0xBFE15E80, 0x8B1969D2, 0x48F2D461);
