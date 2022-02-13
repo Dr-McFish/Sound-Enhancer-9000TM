@@ -41,5 +41,6 @@ Method I am using. If you want to, you can use other stuff than Visual Studio, r
 ## Credits
 
 wood textures https://www.sharetextures.com
+
 Wax Seal image: Henry-Kuhtz-Fotografie https://pixabay.com/illustrations/seal-rubber-stamp-red-imprint-1877460/
 
