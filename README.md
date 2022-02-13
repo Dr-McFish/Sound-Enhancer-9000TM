@@ -27,7 +27,7 @@ Method I am using. If you want to, you can use other stuff than Visual Studio, r
  >mkdir build
  >cd build
  >cmake.exe -G "Visual Studio 16 2019" ..
- ``
+ ```
  
  this should generate the VS solution
  
