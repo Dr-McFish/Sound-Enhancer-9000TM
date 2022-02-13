@@ -1,4 +1,4 @@
-# Sound-Enhanser-9000TM
+# Sound-Enhancer-9000TM
 
 VST3 plugin that make your sound better <br>
 
