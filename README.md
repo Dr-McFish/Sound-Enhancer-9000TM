@@ -1,6 +1,7 @@
 # Sound-Enhanser-9000TM
 
-VST3 plugin that make your sound better
+VST3 plugin that make your sound better <br>
+
 ![Thumbnail](https://user-images.githubusercontent.com/61105022/153748899-77d65c75-5a56-4b79-ae04-336cab0063c4.PNG)
 
 ## `/!\` Disclaimer `/!\`
